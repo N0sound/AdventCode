@@ -3,9 +3,6 @@ package com.alex.adventCode;
 import static org.junit.Assert.assertEquals;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -23,27 +20,20 @@ public class DayFiveTest {
 	}
 
 	@Test
-	public void sdfds() {
-		String[] test = new String[5];
-		test[1] = "a";
-		test[4] = "e";
-		System.out.println(test.length);
-		List<String> list = new ArrayList<String>(Arrays.asList(test));
-		System.out.println(list);
-		list.removeAll(Arrays.asList("", null));
-		System.out.println(list);
-		String[] array = list.toArray(new String[0]);
-		System.out.println(array.length);
+	public void shouldGetFullyReactedPolymerSize() throws Exception {
+		File inputSample = new File(INPUT_FILE_PATH_SAMPLE);
+		assertEquals(10, fixture.getFullyReactedPolymerSize(inputSample));
+
+		File input = new File(INPUT_FILE_PATH);
+		assertEquals(10766, fixture.getFullyReactedPolymerSize(input));
 	}
 
 	@Test
-	public void shouldGetPolymerSize() throws Exception {
+	public void shouldGetSmallestPolymer() throws Exception {
 		File inputSample = new File(INPUT_FILE_PATH_SAMPLE);
-		assertEquals(10, fixture.getSize(inputSample));
+		assertEquals(4, fixture.getSmallestPolymer(inputSample));
 
 		File input = new File(INPUT_FILE_PATH);
-		System.out.println(fixture.getSize(input));
-		// assertEquals(10, fixture.getSize(input));
+		assertEquals(6538, fixture.getSmallestPolymer(input));
 	}
-
 }
