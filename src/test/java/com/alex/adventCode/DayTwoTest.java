@@ -23,10 +23,10 @@ public class DayTwoTest {
 	@Test
 	public void shouldComputeChecksum() throws Exception {
 		File sampleInput = new File(INPUT_FILE_PATH_SAMPLE_1);
-		assertEquals(12L, fixture.getChecksum(sampleInput));
+		assertEquals(12, fixture.getChecksum(sampleInput));
 
 		File input = new File(INPUT_FILE_PATH);
-		assertEquals(6723L, fixture.getChecksum(input));
+		assertEquals(6723, fixture.getChecksum(input));
 	}
 
 	@Test

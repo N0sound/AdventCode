@@ -17,7 +17,7 @@ import java.util.Scanner;
 
 public class DayTwo {
 
-	public long getChecksum(File input) throws FileNotFoundException {
+	public int getChecksum(File input) throws FileNotFoundException {
 		int hasTwo = 0;
 		int hasThree = 0;
 		try (Scanner scanner = new Scanner(input)) {

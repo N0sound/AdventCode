@@ -23,7 +23,7 @@ public class DayFour {
 	private static final String FALLS_ASLEEP = "falls asleep";
 	private static final String WAKES_UP = "wakes up";
 
-	public long generateHashForGuardAsleepTheMost(File input) throws FileNotFoundException, ParseException {
+	public int generateHashForGuardAsleepTheMost(File input) throws FileNotFoundException, ParseException {
 		Map<Integer, Integer> idToTotalMinutesAsleep = new HashMap<>();
 		Map<Integer, SleepReport> idToSleepReport = new HashMap<>();
 
@@ -31,8 +31,7 @@ public class DayFour {
 		return generateHash(idToTotalMinutesAsleep, idToSleepReport);
 	}
 
-	public long generateHashForGuardAsleepAtMostForGivenMinute(File input)
-			throws FileNotFoundException, ParseException {
+	public int generateHashForGuardAsleepAtMostForGivenMinute(File input) throws FileNotFoundException, ParseException {
 		Map<Integer, Integer> idToTotalMinutesAsleep = new HashMap<>();
 		Map<Integer, SleepReport> idToSleepReport = new HashMap<>();
 
@@ -80,7 +79,7 @@ public class DayFour {
 		return matcher;
 	}
 
-	private long generateHash(Map<Integer, Integer> idToTotalMinutesAsleep, Map<Integer, SleepReport> idToSleepReport) {
+	private int generateHash(Map<Integer, Integer> idToTotalMinutesAsleep, Map<Integer, SleepReport> idToSleepReport) {
 		Integer id = Collections.max(idToTotalMinutesAsleep.entrySet(), Map.Entry.comparingByValue()).getKey();
 		int mostSleptMinute = idToSleepReport.get(id).getMostSleptMinute().minute;
 		return id * mostSleptMinute;
@@ -105,7 +104,7 @@ public class DayFour {
 		idToSleepReport.put(id, sleepReport);
 	}
 
-	private long generateHash(Map<Integer, SleepReport> idToSleepReport) {
+	private int generateHash(Map<Integer, SleepReport> idToSleepReport) {
 		int currentId = -1;
 		int frequency = -1;
 		int minute = -1;
