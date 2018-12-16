@@ -25,7 +25,7 @@ public class DayOneTest {
 		assertEquals(4, fixture.getFrequency(sampleInput));
 
 		File input = new File(INPUT_FILE_PATH);
-		assertEquals(543, fixture.getFrequency(input));
+		assertEquals(472, fixture.getFrequency(input));
 	}
 
 	@Test
@@ -34,6 +34,6 @@ public class DayOneTest {
 		assertEquals(10, fixture.findFirstDuplicateFrequency(sampleInput));
 
 		File input = new File(INPUT_FILE_PATH);
-		assertEquals(621, fixture.findFirstDuplicateFrequency(input));
+		assertEquals(66932, fixture.findFirstDuplicateFrequency(input));
 	}
 }

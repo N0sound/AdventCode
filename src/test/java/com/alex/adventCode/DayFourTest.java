@@ -41,7 +41,7 @@ public class DayFourTest {
 		assertEquals(240, fixture.generateHashForGuardAsleepTheMost(sampleInput));
 
 		File input = new File(INPUT_FILE_PATH);
-		assertEquals(77084, fixture.generateHashForGuardAsleepTheMost(input));
+		assertEquals(140932, fixture.generateHashForGuardAsleepTheMost(input));
 	}
 
 	@Test
@@ -50,6 +50,6 @@ public class DayFourTest {
 		assertEquals(4455, fixture.generateHashForGuardAsleepAtMostForGivenMinute(sampleInput));
 
 		File input = new File(INPUT_FILE_PATH);
-		assertEquals(23047, fixture.generateHashForGuardAsleepAtMostForGivenMinute(input));
+		assertEquals(51232, fixture.generateHashForGuardAsleepAtMostForGivenMinute(input));
 	}
 }

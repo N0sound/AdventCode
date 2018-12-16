@@ -26,7 +26,7 @@ public class DayTwoTest {
 		assertEquals(12, fixture.getChecksum(sampleInput));
 
 		File input = new File(INPUT_FILE_PATH);
-		assertEquals(6723, fixture.getChecksum(input));
+		assertEquals(6642, fixture.getChecksum(input));
 	}
 
 	@Test
@@ -35,6 +35,6 @@ public class DayTwoTest {
 		assertEquals("fgij", fixture.getLargestCommongId(sampleInput));
 
 		File input = new File(INPUT_FILE_PATH);
-		assertEquals("prtkqyluiusocwvaezjmhmfgx", fixture.getLargestCommongId(input));
+		assertEquals("cvqlbidheyujgtrswxmckqnap", fixture.getLargestCommongId(input));
 	}
 }

@@ -26,7 +26,7 @@ public class DayThreeTest {
 		assertEquals(4, fixture.getOverLapFabricArea(sampleInput));
 
 		File input = new File(INPUT_FILE_PATH);
-		assertEquals(96569, fixture.getOverLapFabricArea(input));
+		assertEquals(113716, fixture.getOverLapFabricArea(input));
 	}
 
 	@Test
@@ -35,6 +35,6 @@ public class DayThreeTest {
 		assertEquals("3", fixture.getFabricIdWithoutOverlap(sampleInput));
 
 		File input = new File(INPUT_FILE_PATH);
-		assertEquals("1023", fixture.getFabricIdWithoutOverlap(input));
+		assertEquals("742", fixture.getFabricIdWithoutOverlap(input));
 	}
 }

@@ -25,7 +25,7 @@ public class DaySixTest {
 		assertEquals(17, fixture.findLargestFiniteArea(sampleInput, 10));
 
 		File input = new File(INPUT_FILE_PATH);
-		assertEquals(3238, fixture.findLargestFiniteArea(input, 400));
+		assertEquals(5358, fixture.findLargestFiniteArea(input, 400));
 	}
 
 	@Test
@@ -34,6 +34,6 @@ public class DaySixTest {
 		assertEquals(16, fixture.findLargestAreaWithinDistance(sampleInput, 10, 32));
 
 		File input = new File(INPUT_FILE_PATH);
-		assertEquals(45046, fixture.findLargestAreaWithinDistance(input, 400, 10000));
+		assertEquals(37093, fixture.findLargestAreaWithinDistance(input, 400, 10000));
 	}
 }

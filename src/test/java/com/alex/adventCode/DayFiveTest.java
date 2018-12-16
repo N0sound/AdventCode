@@ -25,7 +25,7 @@ public class DayFiveTest {
 		assertEquals(10, fixture.getFullyReactedPolymerSize(inputSample));
 
 		File input = new File(INPUT_FILE_PATH);
-		assertEquals(10766, fixture.getFullyReactedPolymerSize(input));
+		assertEquals(9202, fixture.getFullyReactedPolymerSize(input));
 	}
 
 	@Test
@@ -34,6 +34,6 @@ public class DayFiveTest {
 		assertEquals(4, fixture.getSmallestPolymer(inputSample));
 
 		File input = new File(INPUT_FILE_PATH);
-		assertEquals(6538, fixture.getSmallestPolymer(input));
+		assertEquals(6394, fixture.getSmallestPolymer(input));
 	}
 }
